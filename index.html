@@ -1,5 +1,170 @@
+<!DOCTYPE html>
 <html>
-<body>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <script>
+    var fail = 0; //counts incorrect answers.
+    var pass = 0; //counts correct answers.
+//Question 1
+var question = prompt('what is the most played Overwatch hero? \n A: Mercy \n B: Genji \n C: D.VA');
+  if (question == 'A') {
+    console.log('1: true');
+    document.write('question 1 = correct');
+    pass++;
+  } else {
+    console.log('1: false');
+    document.write('question 1 = incorrect');
+    fail++;
+  }
+
+document.write('<br><br>')
+
+//Question 2
+var question2 = prompt('how many shieldpoints does rein have?');
+  if (question2 == 2000) {
+    console.log('2: true');
+    document.write('question 2 = correct');
+    pass++;
+  } else {
+    console.log('2: false');
+    document.write('question 2 = incorrect');
+    fail++
+  }
+
+document.write('<br><br>')
+
+//Question 3
+var question3 = prompt('How many overwatch maps are there as of 18-09-2018');
+  if (question3 == 16) {
+    console.log('3: true');
+    document.write('question 3 = correct');
+    pass++;
+  } else {
+    console.log('3: false');
+    document.write('question 3 = incorrect');
+    fail++
+  }
+
+document.write('<br><br>');
+
+//Question 4
+var question4 = prompt('what is the newest addition to the roster? \n A: Brigitte \n B: Wrecking Ball \n C: Orisa');
+  if (question4 == 'B') {
+    console.log('4: true');
+    document.write('question 4 = correct');
+    pass++;
+  } else {
+    console.log('4: false');
+    document.write('question 4 = incorrect');
+    fail++;
+  }
+
+document.write('<br><br>');
+
+//Question 5
+var question5 = prompt('Who won the 2018 World Cup? \n A: Dallas Fuel \n B: Houston Outlaws \n C: London Spitfire');
+  if (question5 == 'C') {
+    console.log('5: true');
+    document.write('question 5 = correct');
+    pass++;
+  } else {
+    console.log('5: false');
+    document.write('question 5 = incorrect');
+    fail++;
+  }
+
+document.write('<br><br>');
+
+//Question 6
+var question6 = prompt('how many heros wear jetpacks?');
+  if (question6 == 1) {
+    console.log('6: true');
+    document.write('question 6 = correct');
+    pass++;
+  } else {
+    console.log('6: false');
+    document.write('question 6 = incorrect');
+    fail++;
+  }
+
+document.write('<br><br>');
+
+//Question 7
+var question7 = prompt('which team did the worst in the OWL playoffs? \n A: Houston Outlaws \n B: Shanghai Dragons \n C: Dallas Fuel');
+  if (question7 == 'B') {
+    console.log('7: true');
+    document.write('question 7 = correct');
+    pass++;
+  } else {
+    console.log('7: false');
+    document.write('question 7 = incorrect');
+    fail++;
+  }
+
+document.write('<br><br>');
+
+//Question 8
+var question8 = prompt('what was the name of the pre-order skin?');
+  if (question8 == 'Noire') {
+    console.log('8: true');
+    document.write('question 8 = correct');
+    pass++;
+  } else {
+    console.log('8: false');
+    document.write('question 8 = incorrect');
+    fail++;
+  }
+
+document.write('<br><br>');
+
+//Question 9
+var question9 = prompt('in what year did Overwatch release');
+  if (question9 == 2016) {
+    console.log('9: true');
+    document.write('question 9 = correct');
+    pass++;
+  } else {
+    console.log('9: false');
+    document.write('question 9 = incorrect');
+    fail++;
+  }
+
+document.write('<br><br>')
+
+//Question 10
+var question10 = prompt('what is the least amount of HP a hero can have at any time (full or low HP)?');
+  if (question10 >= 1 && question10 <= 200) {
+    console.log('10: true');
+    document.write('question 10 = correct');
+    pass++;
+  } else {
+    console.log('10: false');
+    document.write('question 10 = incorrect');
+    fail++;
+  }
+/*checks how many questions failed and calculates results*/
+if (fail > 6) {
+  document.write('<BR><BR>');
+  document.write('less than 5 questions were correct: you failed.');
+  console.log('Test result: Test failed.');
+  alert('you failed the test, press enter to restart.');
+  location.reload();
+} else if (fail == 5) {
+  document.write('<BR><BR>');
+  document.write('5 Questions were correct: you almost passed.');
+  console.log('Test result: Almost passed');
+  alert('you almost passed, press enter to try again.');
+} else {
+  document.write('<BR><BR>');
+  document.write('more than 5 questions were correct! you passed!');
+  console.log('Test result: Passed');
+}
+
+document.write('<br><br>');
+document.write(pass + ' answers correct');
+document.write('<BR>');
+document.write(fail + ' answers incorrect');
+console.log( pass + ' Correct');
+console.log( fail + ' Incorrect');
+    </script>
+  </head>
 </html>
